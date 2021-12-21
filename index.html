@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/selectric.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div class="calculator">
+        <h1 class="calculator__title">Калькулятор двух чисел</h1>
+        <form action="#" method="get">
+            <div class="calculator__inner">
+                <div class="calculator__number-wrap">
+                    <label class="calculator__number-label" for="number-1">Число 1</label>
+                    <input placeholder="Введите число" id="number-1" step="1"  class="calculator__number" type="number">
+                </div>
+                <select class="calculator__operation" id="operation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <div class="calculator__number-wrap">
+                    <label class="calculator__number-label"  for="number-2" step="1">Число 2</label>
+                    <input placeholder="Введите число" id="number-2" class="calculator__number" type="number">
+                </div>
+            </div>
+            <input type="submit" value="Узнать результат" class="calculator__btn">
+            <div class="calculator__result">Результат: <span class="calculator__result-number"></span></div>
+        </form>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.selectric.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

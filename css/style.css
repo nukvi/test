@@ -1,0 +1,120 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    color: rgb(38, 38, 38);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.calculator{
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 25px 10px;
+    letter-spacing: 1px;
+}
+
+.calculator .selectric-wrapper {
+    margin: 0 5px;
+}
+
+.calculator__number{
+    display: block;
+    height: 46px;
+    cursor: pointer;
+    color: #888;
+    outline: none;
+    width: 125px;
+    text-align: center;
+    border: 2px solid #F0F0F0;
+    background-color: #F8F8F8;
+    color: rgb(38, 38, 38);
+}
+
+.calculator .selectric .label{
+    color: rgb(38, 38, 38);
+}
+
+.calculator .selectric-items li{
+    color: rgb(38, 38, 38);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.calculator__number::-webkit-input-placeholder {
+    color: rgb(38, 38, 38);
+}
+
+.calculator__number:-ms-input-placeholder {
+    color: rgb(38, 38, 38);
+}
+.calculator__number::-ms-input-placeholder {
+    color: rgb(38, 38, 38);
+}
+.calculator__number::placeholder {
+    color: rgb(38, 38, 38);
+} 
+
+.calculator__number:hover, .calculator__number:focus{
+    border-color: silver;
+}
+
+.calculator__number-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator__inner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.calculator__number-label{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.calculator__title{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.calculator__btn{
+    width: 329px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    color: #888;
+    outline: none;
+    text-align: center;
+    border: 2px solid #F0F0F0;
+    background-color: #F8F8F8;
+    color: rgb(38, 38, 38);
+}
+
+.calculator__btn:hover, .calculator__btn:focus{
+    border-color: silver;
+}
+
+.calculator__result-number{
+    font-weight: bold;
+}
